@@ -28,17 +28,18 @@
       <p class="meta">生效日期：2026 年 9 月 25 日<br>提供者：Jing Leng（AIVU Player 开发者）<br>联系方式：<a href="mailto:sdicfund@hotmail.com">sdicfund@hotmail.com</a></p>
 
       <h2>概要</h2>
-      <p class="summary">AIVU Player 不收集、不存储，也不分享你的任何个人数据。App 没有账号，没有广告，没有统计或跟踪，开发者也没有接收数据的服务器。</p>
+      <p class="summary">AIVU Player 不收集你的任何个人数据。App 没有账号，没有广告，没有统计或跟踪，开发者也没有接收数据的服务器。App 使用的数据都留在你的设备上，除非你自己主动分享，例如用「共享文件」分享一个视频，或分享诊断文件。</p>
 
       <h2>App 在你的设备上使用的数据</h2>
-      <p>以下数据只在你的设备上使用，不会发送给我们或任何第三方：</p>
       <ul>
-        <li><strong>照片图库：</strong>经你授权后以只读方式读取视频，用于显示和播放，不会修改或上传。</li>
+        <li><strong>照片图库：</strong>经你授权后以只读方式读取照片和视频（包括空间照片和空间视频），用于显示和播放，不会修改或上传。</li>
         <li><strong>你选择的文件和文件夹：</strong>只访问你主动选择的位置。</li>
-        <li><strong>局域网与 NAS：</strong>只连接你自己添加的服务器（SMB），用于浏览和播放你的视频。视频直接在你的设备和 NAS 之间传输。服务器地址和登录信息只保存在本机（登录信息在系统钥匙串中）。</li>
-        <li><strong>AI 3D 转换：</strong>完全在设备上运行，使用 App 自带的模型，画面不会离开你的设备。</li>
+        <li><strong>NAS 与局域网：</strong>App 只登录你选择的服务器（SMB），并直接在你的设备和 NAS 之间传输视频。服务器地址和用户名保存在 App 的设置中，密码保存在系统钥匙串中，都只在本机。</li>
+        <li><strong>查找网络服务器：</strong>只有在你点「查找网络服务器」时，App 才会在局域网里寻找文件服务器：接收 Bonjour 广播，短暂检查局域网内的地址是否提供文件共享（445 端口），并通过你网络的 DNS 查询有回应的服务器的名称。这些信息都不会发送给我们。</li>
+        <li><strong>AI 3D：</strong>完全在设备上运行，使用 App 自带的模型，画面不会离开你的设备。</li>
         <li><strong>设置和播放进度：</strong>例如续播位置，保存在本机。</li>
-        <li><strong>技术日志：</strong>为了排查问题，App 在本机保存一份运行日志（例如播放事件和错误）。日志不包含你的视频内容或登录信息，也不会被发送出去。</li>
+        <li><strong>免费试看记录：</strong>为了保证每个视频 10 秒免费试看的公平，App 会在本机的系统钥匙串中保存一份很小的记录：试看过的文件的哈希标识和已用的试看秒数。它不会离开设备，删除 App 后可能仍会保留。</li>
+        <li><strong>技术日志：</strong>为了排查问题，App 在本机保存一份运行日志，记录 App 和系统版本、语言和地区、你使用的界面和按钮、播放事件和错误，以及它们发生的时间；视频和服务器只以简短的哈希标识出现，不记录名称或地址，但系统报告的错误信息偶尔可能包含文件或文件夹名称。日志保存在 App 的私有存储中，不参与设备备份，也不会自动发送。只有当你在「设置 &gt; 诊断」中点「准备导出诊断文件」，再点「分享诊断文件」时，由你决定发给谁，例如发到我们的支持邮箱；我们只用它来处理你的问题。</li>
       </ul>
 
       <h2>购买</h2>
@@ -48,12 +49,12 @@
       <p>App 不包含任何第三方分析、广告或跟踪组件，也不与任何第三方分享数据。</p>
 
       <h2>数据保留与删除</h2>
-      <p>所有数据都保存在你的设备上：</p>
       <ul>
         <li>删除 App 会移除它保存的设置、播放进度和日志。</li>
-        <li>NAS 登录信息保存在系统钥匙串中，在 App 中「移除服务器」时会一并删除。如果要删除 App，建议先移除服务器。</li>
+        <li>NAS 密码保存在系统钥匙串中，在 App 中「移除服务器」时会一并删除。如果要删除 App，建议先移除服务器。</li>
+        <li>免费试看记录保存在系统钥匙串中，删除 App 后可能仍会保留，只用于试看额度。</li>
       </ul>
-      <p>我们不持有你的任何数据，所以无需另行申请删除。如有疑问，欢迎联系我们。</p>
+      <p>我们不持有你的任何数据。如果你曾把诊断文件发给我们，可以随时发邮件要求删除。如有疑问，欢迎联系我们。</p>
 
       <h2>儿童</h2>
       <p>App 不以儿童为对象，也不收集任何人的个人数据。</p>
@@ -70,17 +71,18 @@
       <p class="meta">Effective date: September 25, 2026<br>Provider: Jing Leng, developer of AIVU Player<br>Contact: <a href="mailto:sdicfund@hotmail.com">sdicfund@hotmail.com</a></p>
 
       <h2>Summary</h2>
-      <p class="summary">AIVU Player does not collect, store or share any of your personal data. There is no account, no advertising, no analytics or tracking, and no developer server that receives data.</p>
+      <p class="summary">AIVU Player collects none of your personal data. There is no account, no advertising, no analytics or tracking, and no developer server that receives data. What the app uses stays on your device unless you share it yourself, for example a video with Share File, or a diagnostic file.</p>
 
       <h2>Data the app uses on your device</h2>
-      <p>The following stays on your device and is never sent to us or to anyone else:</p>
       <ul>
-        <li><strong>Photos library:</strong> with your permission, videos are read (never modified or uploaded) to show and play them.</li>
+        <li><strong>Photos library:</strong> with your permission, photos and videos (including spatial photos and videos) are read, never modified or uploaded, to show and play them.</li>
         <li><strong>Files and folders you choose:</strong> only the locations you select.</li>
-        <li><strong>Local network and NAS:</strong> the app connects only to servers you add (SMB), to browse and play your videos. Video streams directly between your device and your NAS. Server addresses and sign-in details are stored only on your device (sign-in details in the system keychain).</li>
-        <li><strong>AI 3D conversion:</strong> runs entirely on your device with models included in the app; no frame leaves your device.</li>
+        <li><strong>NAS and local network:</strong> the app signs in only to servers you choose (SMB), and video streams directly between your device and your NAS. Server addresses and user names are saved in the app's settings and passwords in the system keychain, all on your device.</li>
+        <li><strong>Find Network Servers:</strong> only when you tap Find Network Servers, the app looks for file servers on your local network: it listens for Bonjour announcements, briefly checks addresses on your local network for file sharing (port 445), and looks up the names of servers that answer through your network's DNS. None of this is sent to us.</li>
+        <li><strong>AI 3D:</strong> runs entirely on your device with models included in the app; no frame leaves your device.</li>
         <li><strong>Settings and playback positions:</strong> for example where to resume, kept on your device.</li>
-        <li><strong>Technical log:</strong> to help troubleshoot, the app keeps a log on your device (for example playback events and errors). It contains no video content or sign-in details and is never sent anywhere.</li>
+        <li><strong>Free preview record:</strong> to keep the free 10-second preview per video fair, the app keeps a small record in the system keychain on this device: hashed identifiers of the files you previewed and the preview seconds used. It never leaves the device and may remain after you delete the app.</li>
+        <li><strong>Technical log:</strong> to help troubleshoot, the app keeps a log on your device with the app and system versions, language and region, the screens and controls you use, playback events and errors, with their times; videos and servers appear only as short hashed identifiers, never as names or addresses, although error messages reported by the system can occasionally include a file or folder name. The log is kept in the app's private storage, excluded from device backups, and never sent automatically. Only if you choose Settings &gt; Diagnostics &gt; Prepare diagnostic export and then Share diagnostic file do you decide where it goes, for example to our support email; we use it only to answer your request.</li>
       </ul>
 
       <h2>Purchases</h2>
@@ -90,12 +92,12 @@
       <p>The app contains no third-party analytics, advertising or tracking components and shares no data with any third party.</p>
 
       <h2>Retention and deletion</h2>
-      <p>All data stays on your device:</p>
       <ul>
         <li>Deleting the app removes its settings, playback positions and log.</li>
-        <li>NAS sign-in details live in the system keychain and are deleted when you choose "Remove Server" in the app. Remove your servers before deleting the app.</li>
+        <li>NAS passwords live in the system keychain and are deleted when you choose "Remove Server" in the app. Remove your servers before deleting the app.</li>
+        <li>The free preview record lives in the system keychain, may remain after the app is deleted, and is used only for the preview allowance.</li>
       </ul>
-      <p>We hold none of your data, so there is nothing to request. Questions are always welcome.</p>
+      <p>We hold none of your data. If you ever sent us a diagnostic file, email us at any time to have it deleted. Questions are always welcome.</p>
 
       <h2>Children</h2>
       <p>The app is not directed to children and collects no personal data from anyone.</p>
