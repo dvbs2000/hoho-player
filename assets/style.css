@@ -1,0 +1,72 @@
+/* AIVU Player site: privacy policy and support. Colours follow the app icon (navy, electric blue). */
+:root {
+  --bg: #ffffff;
+  --surface: #f3f5fb;
+  --text: #0e1330;
+  --muted: #5a6280;
+  --accent: #3150f0;
+  --line: #e2e6f1;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #070b1f;
+    --surface: #10163a;
+    --text: #e9ecf8;
+    --muted: #9ba4c6;
+    --accent: #88a2ff;
+    --line: #1f2852;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB",
+    "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+header.site { border-bottom: 1px solid var(--line); }
+header.site .wrap {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding-top: 14px; padding-bottom: 14px;
+}
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 600; }
+.brand img { width: 32px; height: 32px; }
+
+.lang { display: flex; gap: 4px; }
+.lang button {
+  font: inherit; font-size: 14px; color: var(--muted); background: transparent;
+  border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); }
+
+main.wrap { padding-top: 32px; padding-bottom: 48px; }
+h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; }
+h2 { font-size: 20px; line-height: 1.35; margin: 32px 0 8px; }
+p { margin: 0 0 14px; }
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+.meta { color: var(--muted); font-size: 15px; margin-bottom: 24px; }
+.summary { background: var(--surface); border-radius: 14px; padding: 16px 18px; }
+.faq dt { font-weight: 600; margin-top: 20px; }
+.faq dd { margin: 6px 0 0; }
+
+.hero { text-align: center; padding: 40px 0 16px; }
+.hero img { width: 144px; height: 144px; }
+.hero h1 { font-size: 36px; margin-top: 16px; }
+.hero .tagline { font-size: 21px; margin: 8px 0 6px; }
+.hero .sub { color: var(--muted); }
+.links { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: 20px; }
+
+footer.site { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+footer.site .wrap { padding-top: 18px; padding-bottom: 36px; display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* With JavaScript the page shows one language (browser default, switchable); without it, both. */
+html[data-lang="zh"] [data-l="en"],
+html[data-lang="en"] [data-l="zh"] { display: none; }
