@@ -1,6 +1,6 @@
-# AIVU Player website
+# Hoho 3D Player website
 
-Privacy policy and support pages for AIVU Player (Apple Vision Pro), published with GitHub Pages at
+Privacy policy and support pages for Hoho 3D Player (Apple Vision Pro), published with GitHub Pages at
 https://dvbs2000.github.io/aivu-player/
 
 - `privacy/` — privacy policy (Chinese and English)
