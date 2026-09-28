@@ -2,7 +2,7 @@
 (function () {
   var root = document.documentElement;
   function saved() {
-    try { var value = localStorage.getItem("aivu-lang"); return value === "zh" || value === "en" ? value : null; }
+    try { var value = localStorage.getItem("hoho-lang"); return value === "zh" || value === "en" ? value : null; }
     catch (e) { return null; }
   }
   function fromBrowser() {
@@ -31,6 +31,6 @@
     if (!button) return;
     var lang = button.getAttribute("data-set-lang");
     set(lang);
-    try { localStorage.setItem("aivu-lang", lang); } catch (e) {}
+    try { localStorage.setItem("hoho-lang", lang); } catch (e) {}
   });
 })();
